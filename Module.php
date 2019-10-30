@@ -199,7 +199,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     protected function prepareAuthorizationServer()
     {
-        $this->_responseType = ArrayHelper::getValue($this, 'clientEntity.responseType');
+        //$this->_responseType = ArrayHelper::getValue($this, 'clientEntity.responseType');
 
         $this->_authorizationServer = new AuthorizationServer(
             $this->clientRepository,
